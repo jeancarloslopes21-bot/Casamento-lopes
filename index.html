@@ -2,25 +2,28 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Aliança Lopes - Episódio I</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <title>Aliança Lopes - Lista de Presentes</title>
 </head>
-<body style="background-color: #0b0d17; color: #ffd700; font-family: sans-serif; text-align: center;">
+<body>
+    <div class="container">
+        <h1>Família Lopes: Episódio I</h1>
+        <p>A Força está com quem contribui.</p>
 
-    <h1>Família Lopes: Episódio I</h1>
-    <p>A Força está com quem contribui.</p>
-
-    <div class="presente">
-        <img src="images/seu-arquivo.jpeg" alt="Duelo Espacial" style="max-width: 300px;">
-        <h3>Duelo Espacial com o Noivo</h3>
-        <button onclick="copiarPix()">Copiar PIX da Força</button>
+        <div class="presente">
+            <img src="images/duelo-espacial.jpg" alt="Duelo Espacial">
+            <h3>1. Duelo Espacial com o Noivo</h3>
+            <p>Efeitos especiais incluso. Dignidade não garantida.</p>
+            <button onclick="copiarPix()">Copiar PIX da Força</button>
+        </div>
     </div>
 
     <script>
         function copiarPix() {
-            const pix = "SUA_CHAVE_AQUI";
+            const pix = "SUA_CHAVE_PIX_AQUI";
             navigator.clipboard.writeText(pix);
-            alert("Chave PIX copiada! Que a Força esteja com você.");
+            alert("Chave PIX copiada!");
         }
     </script>
 </body>
