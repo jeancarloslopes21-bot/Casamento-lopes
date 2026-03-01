@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aliança Lopes - Episódio I</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #0b0d17; color: #ffd700; font-family: sans-serif; text-align: center;">
+
+    <h1>Família Lopes: Episódio I</h1>
+    <p>A Força está com quem contribui.</p>
+
+    <div class="presente">
+        <img src="images/seu-arquivo.jpeg" alt="Duelo Espacial" style="max-width: 300px;">
+        <h3>Duelo Espacial com o Noivo</h3>
+        <button onclick="copiarPix()">Copiar PIX da Força</button>
+    </div>
+
+    <script>
+        function copiarPix() {
+            const pix = "SUA_CHAVE_AQUI";
+            navigator.clipboard.writeText(pix);
+            alert("Chave PIX copiada! Que a Força esteja com você.");
+        }
+    </script>
+</body>
+</html>
