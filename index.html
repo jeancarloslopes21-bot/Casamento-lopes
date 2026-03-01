@@ -103,27 +103,33 @@
     </div>
 
     <script>
-       // Variável para guardar o valor atual
-let valorAtual = "";
+    // Variáveis globais para guardar os dados do presente selecionado
+    let valorAtual = "";
+    let pixAtual = ""; 
 
-function abrirModal(nome, valor) {
-    document.getElementById("modal-titulo").innerText = nome;
-    document.getElementById("modal-valor").innerText = valor;
-    valorAtual = valor; // Salva o valor para usar depois
-    document.getElementById("modal-presente").style.display = "block";
-}
+    function abrirModal(nome, valor, pix) {
+        document.getElementById("modal-titulo").innerText = nome;
+        document.getElementById("modal-valor").innerText = valor;
+        
+        // Salva os dados nas variáveis globais
+        valorAtual = valor; 
+        pixAtual = pix; 
+        
+        document.getElementById("modal-presente").style.display = "block";
+    }
 
-function fecharModal() {
-    document.getElementById("modal-presente").style.display = "none";
-}
+    function fecharModal() {
+        document.getElementById("modal-presente").style.display = "none";
+    }
 
-function copiarPixModal() {
-    const pix = "jean.lop@hotmail.com";
-    navigator.clipboard.writeText(pix);
-    alert("Chave PIX copiada! Sugestão de Valor do presente: " + valorAtual + ". Obrigado por contribuir com a nossa Aliança!");
-    fecharModal();
-        }
-    </script>
+    function copiarPixModal() {
+        // Usa a variável pixAtual que foi definida ao abrir o modal
+        navigator.clipboard.writeText(pixAtual);
+        
+        alert("Chave PIX copiada! Valor do presente: " + valorAtual + ". Obrigado por contribuir com a nossa Aliança!");
+        fecharModal();
+    }
+</script>
    
 </div>
     <div id="modal-presente" class="modal">
