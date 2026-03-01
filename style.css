@@ -27,3 +27,14 @@ button {
     border-radius: 5px;
     font-size: 16px;
 }
+.player-container {
+    margin-top: 40px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border: 1px solid #ffd700;
+}
+.player-container p {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
