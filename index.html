@@ -100,10 +100,25 @@
     </div>
 
     <script>
-        function copiarPix() {
-            const pix = "jean.lop@hotmail.com"; // Coloque seu PIX aqui!
-            navigator.clipboard.writeText(pix);
-            alert("Chave PIX copiada! Que a Força esteja com você.");
+       // Variável para guardar o valor atual
+let valorAtual = "";
+
+function abrirModal(nome, valor) {
+    document.getElementById("modal-titulo").innerText = nome;
+    document.getElementById("modal-valor").innerText = valor;
+    valorAtual = valor; // Salva o valor para usar depois
+    document.getElementById("modal-presente").style.display = "block";
+}
+
+function fecharModal() {
+    document.getElementById("modal-presente").style.display = "none";
+}
+
+function copiarPixModal() {
+    const pix = "jean.lop@hotmail.com";
+    navigator.clipboard.writeText(pix);
+    alert("Chave PIX copiada! Valor do presente: " + valorAtual + ". Obrigado por contribuir com a nossa Aliança!");
+    fecharModal();
         }
     </script>
     <div class="player-container">
