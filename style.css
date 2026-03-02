@@ -68,3 +68,33 @@ button:hover { background-color: #e6c200; transform: scale(1.05); }
     font-size: 28px;
     cursor: pointer;
 }
+/* Container que cria a profundidade 3D */
+.star-wars-container {
+    height: 400px; /* Altura da janela do crawl */
+    perspective: 500px; /* Define o ponto de fuga (o quanto o texto "inclina") */
+    overflow: hidden;
+    background: #0b0d17;
+    margin: 20px auto;
+    border: 2px solid #ffd700;
+    border-radius: 15px;
+    position: relative;
+}
+
+/* O texto que sobe */
+.crawl-text {
+    color: #ffd700;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top: 100%; /* Começa fora da tela, embaixo */
+    transform-origin: 50% 100%;
+    transform: rotateX(20deg) translateY(0);
+    animation: crawl 25s linear infinite; /* Tempo do scroll */
+    padding: 20px;
+}
+
+@keyframes crawl {
+    0% { transform: rotateX(20deg) translateY(0); }
+    100% { transform: rotateX(20deg) translateY(-100%); }
+}
