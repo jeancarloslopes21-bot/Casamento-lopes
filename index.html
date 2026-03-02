@@ -7,160 +7,133 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <div class="container">
-        
         <h1>Família Lopes: Episódio I</h1>
         <p>O Casamento</p>
         
-         <div class="player-container">
-    <p>Trilha Sonora da Família:</p>
-    <audio controls>
-        <source src="music/tema.mp3" type="audio/mpeg">
-        Seu navegador não suporta o elemento de áudio.
-    </audio>
-    </div>
+        <div class="player-container">
+            <p>Trilha Sonora da Família:</p>
+            <audio controls>
+                <source src="music/tema.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+        </div>
 
         <div class="historia">
-    <h2>Nossa História</h2>
-    <p>Em uma galáxia não tão distante... Dois corações se encontraram. O amor cresceu e a aventura começou. e então nasceu nossa maior missão: A Princesa Sofia. Agora, a Família Lopes inicia oficialmente sua jornada como uma aliança intergaláctica!</p>
-</div>
+            <h2>Nossa História</h2>
+            <p>Em uma galáxia não tão distante... Dois corações se encontraram. O amor cresceu e a aventura começou. E então nasceu nossa maior missão: A Princesa Sofia. Agora, a Família Lopes inicia oficialmente sua jornada como uma aliança intergaláctica!</p>
+        </div>
+
         <h2>Lista oficial de presentes: Escolha sua missão!</h2>
         
         <div class="presente">
             <img src="images/Duelo.png" alt="Duelo Espacial">
             <h3>Duelo Espacial</h3>
             <p>Efeitos especiais inclusos. Dignidade não garantida.</p>
-            <button onclick="abrirModal('Duelo Espacial', 'R$ 200,00', 'chave-pix-do-duelo@exemplo.com')">
-    Ver detalhes e Valor
-</button>
+            <button onclick="abrirModal('Duelo Espacial', 'R$ 200,00', 'pix-duelo@exemplo.com')">Ver detalhes e Valor</button>
         </div>
 
-         <div class="presente">
-            <img src="images/tributo.png" alt="Descrição">
+        <div class="presente">
+            <img src="images/tributo.png" alt="Tributo">
             <h3>Tributo Oficial a Princesa Sofia</h3>
             <p>Comandante Suprema da galaxia Doméstica</p>
-            <button onclick="abrirModal('Duelo Espacial', 'R$ 200,00', 'chave-pix-do-duelo@exemplo.com')">
-    Ver detalhes e Valor
-</button>
+            <button onclick="abrirModal('Tributo', 'R$ 300,00', 'pix-tributo@exemplo.com')">Ver detalhes e Valor</button>
         </div>
 
         <div class="presente">
-            <img src="images/Foguete.png" alt="Combustível">
+            <img src="images/Foguete.png" alt="Foguete">
             <h3>Combustível da Lua de Mel</h3>
             <p>Destino: Romance Interplanetário.</p>
-            <button onclick="abrirModal('Duelo Espacial', 'R$ 200,00', 'chave-pix-do-duelo@exemplo.com')">
-    Ver detalhes e Valor
-</button>
-        </div>
-
-         <div class="presente">
-            <img src="images/Sofa.png" alt="Descrição">
-            <h3>Sofá para Maratonas Galácticas</h3>
-            <p>Sessões épcas aprovadas pela Princesa Sofia</p>
-            <button onclick="abrirModal('Duelo Espacial', 'R$ 200,00', 'chave-pix-do-duelo@exemplo.com')">
-    Ver detalhes e Valor
-</button>
-        </div>
-
-          <div class="presente">
-            <img src="images/Mercado.png" alt="Descrição">
-            <h3>Mercado da Base Rebelde</h3>
-            <p>porque o amor é lindo mas o mercado vence</p>
-            <button onclick="abrirModal('Duelo Espacial', 'R$ 200,00', 'chave-pix-do-duelo@exemplo.com')">
-    Ver detalhes e Valor
-</button>
+            <button onclick="abrirModal('Combustível', 'R$ 200,00', 'pix-foguete@exemplo.com')">Ver detalhes e Valor</button>
         </div>
 
         <div class="presente">
-            <img src="images/Tijolo.png" alt="Descrição">
+            <img src="images/Sofa.png" alt="Sofá">
+            <h3>Sofá para Maratonas Galácticas</h3>
+            <p>Sessões épicas aprovadas pela Princesa Sofia</p>
+            <button onclick="abrirModal('Sofá', 'R$ 500,00', 'pix-sofa@exemplo.com')">Ver detalhes e Valor</button>
+        </div>
+
+        <div class="presente">
+            <img src="images/Mercado.png" alt="Mercado">
+            <h3>Mercado da Base Rebelde</h3>
+            <p>Porque o amor é lindo mas o mercado vence</p>
+            <button onclick="abrirModal('Dinheiro para Mercado', 'R$ 150,00', 'pix-mercado@exemplo.com')">Ver detalhes e Valor</button>
+        </div>
+
+        <div class="presente">
+            <img src="images/Tijolo.png" alt="Tijolo">
             <h3>Tijolinho da Fortaleza interplanetária</h3>
             <p>Construindo nosso império com carinho</p>
-            <button onclick="abrirModal('Duelo Espacial', 'R$ 200,00', 'chave-pix-do-duelo@exemplo.com')">
-    Ver detalhes e Valor
-</button>
+            <button onclick="abrirModal('Tijolinho', 'R$ 100,00', 'pix-tijolo@exemplo.com')">Ver detalhes e Valor</button>
         </div>
 
-
         <div class="presente">
-            <img src="images/pix.png" alt="Descrição">
+            <img src="images/pix.png" alt="Pix">
             <h3>Pix da Força</h3>
-            <p>uma força poderosa hoje em dia</p>
-            <button onclick="abrirModal('Duelo Espacial', 'R$ 200,00', 'chave-pix-do-duelo@exemplo.com')">
-    Ver detalhes e Valor
-</button>
-            </div>
-        
-
-        <div class="presente">
-            <img src="images/endor.png" alt="Descrição">
-            <h3>Viagem para Lua de Endor</h3>
-            <p>Passeio romantico na Floresta, Zero Criaturas perigosas (não garantido)</p>
-            <button onclick="abrirModal('Duelo Espacial', 'R$ 200,00', 'chave-pix-do-duelo@exemplo.com')">
-    Ver detalhes e Valor
-</button>
+            <p>Uma força poderosa hoje em dia</p>
+            <button onclick="abrirModal('Super Pix da Força', 'R$ 500,00', 'pix-forca@exemplo.com')">Ver detalhes e Valor</button>
         </div>
 
+        <div class="presente">
+            <img src="images/endor.png" alt="Endor">
+            <h3>Viagem para Lua de Endor</h3>
+            <p>Passeio romântico na Floresta, Zero Criaturas perigosas (não garantido)</p>
+            <button onclick="abrirModal('A Viagem!', 'R$ 600,00', 'pix-endor@exemplo.com')">Ver detalhes e Valor</button>
+        </div>
 
-         <div class="presente">
-            <img src="images/Podrace.jpeg" alt="Corrida de Pods">
+        <div class="presente">
+            <img src="images/Podrace.jpeg" alt="Podrace">
             <h3>Corrida de Pods</h3>
             <p>Alta velocidade na Orla Exterior.</p>
-            <button onclick="abrirModal('Duelo Espacial', 'R$ 200,00', 'chave-pix-do-duelo@exemplo.com')">
-    Ver detalhes e Valor
-</button>
+            <button onclick="abrirModal('Corrida de Pods', 'R$ 450,00', 'pix-pods@exemplo.com')">Ver detalhes e Valor</button>
         </div>
 
         <div class="presente">
-            <img src="images/sabre.png" alt="Descrição">
+            <img src="images/sabre.png" alt="Sabre">
             <h3>Par de Sabres de Luz</h3>
             <p>Proteção Oficial de Princesa Sofia, Certificados contra monstros do quarto</p>
-            <button onclick="abrirModal('Duelo Espacial', 'R$ 200,00', 'chave-pix-do-duelo@exemplo.com')">
-    Ver detalhes e Valor
-</button>
+            <button onclick="abrirModal('Par de Sabres', 'R$ 700,00', 'pix-sabres@exemplo.com')">Ver detalhes e Valor</button>
         </div>
 
+        <div class="presente">
+            <h3>Agradecimento</h3>
+            <p>colocar o texto de agradecimento aqui123</p>
+        </div>
 
-    </div>
+    </div> <script>
+        let valorAtual = "";
+        let pixAtual = ""; 
 
-    <script>
-    // Variáveis globais para guardar os dados do presente selecionado
-    let valorAtual = "";
-    let pixAtual = ""; 
+        function abrirModal(nome, valor, pix) {
+            document.getElementById("modal-titulo").innerText = nome;
+            document.getElementById("modal-valor").innerText = valor;
+            valorAtual = valor; 
+            pixAtual = pix; 
+            document.getElementById("modal-presente").style.display = "block";
+        }
 
-    function abrirModal(nome, valor, pix) {
-        document.getElementById("modal-titulo").innerText = nome;
-        document.getElementById("modal-valor").innerText = valor;
-        
-        // Salva os dados nas variáveis globais
-        valorAtual = valor; 
-        pixAtual = pix; 
-        
-        document.getElementById("modal-presente").style.display = "block";
-    }
+        function fecharModal() {
+            document.getElementById("modal-presente").style.display = "none";
+        }
 
-    function fecharModal() {
-        document.getElementById("modal-presente").style.display = "none";
-    }
-
-    function copiarPixModal() {
-        // Usa a variável pixAtual que foi definida ao abrir o modal
-        navigator.clipboard.writeText(pixAtual);
-        
-        alert("Chave PIX copiada! Valor do presente: " + valorAtual + ". Obrigado por contribuir com a nossa Aliança!");
-        fecharModal();
-    }
-</script>
+        function copiarPixModal() {
+            navigator.clipboard.writeText(pixAtual);
+            alert("Chave PIX copiada! Valor sugerido: " + valorAtual + ". Obrigado!");
+            fecharModal();
+        }
+    </script>
    
-</div>
     <div id="modal-presente" class="modal">
-    <div class="modal-conteudo">
-        <span class="fechar" onclick="fecharModal()">&times;</span>
-        <h2 id="modal-titulo">Título</h2>
-        <p id="modal-valor" style="font-size: 1.5em; color: #ffd700; margin: 15px 0;"></p>
-        <p>Ao confirmar, a chave PIX será copiada automaticamente, basta colar em seu app do banco e contribuir com nossa Aliança</p>
-        <button onclick="copiarPixModal()">Copiar PIX e Confirmar</button>
+        <div class="modal-conteudo">
+            <span class="fechar" onclick="fecharModal()">&times;</span>
+            <h2 id="modal-titulo">Título</h2>
+            <p id="modal-valor" style="font-size: 1.5em; color: #ffd700; margin: 15px 0;"></p>
+            <p>Ao confirmar, a chave PIX será copiada automaticamente.</p>
+            <button onclick="copiarPixModal()">Copiar PIX e Confirmar</button>
+        </div>
     </div>
-</div>
+
 </body>
-    
 </html>
