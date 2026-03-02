@@ -70,7 +70,7 @@ button:hover { background-color: #e6c200; transform: scale(1.05); }
 }
 /* Container que cria a profundidade 3D */
 .star-wars-container {
-    height: 400px; /* Altura da janela do crawl */
+    height: 250px; /* Altura da janela do crawl */
     perspective: 500px; /* Define o ponto de fuga (o quanto o texto "inclina") */
     overflow: hidden;
     background: #0b0d17;
