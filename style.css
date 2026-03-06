@@ -90,7 +90,7 @@ button:hover { background-color: #e6c200; transform: scale(1.05); }
     top: 100%; /* Começa fora da tela, embaixo */
     transform-origin: 50% 100%;
     transform: rotateX(20deg) translateY(0);
-    animation: crawl 25s linear infinite; /* Tempo do scroll */
+    animation: crawl 30s linear infinite; /* Tempo do scroll */
     padding: 20px;
 }
 
